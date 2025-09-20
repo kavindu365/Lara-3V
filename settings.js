@@ -1,11 +1,11 @@
-const fs = require('fs');
+tconst fs = require('fs');
 if (fs.existsSync('config.env')) require('dotenv').config({ path: './config.env' });
 
 function convertToBool(text, fault = 'true') {
     return text === fault ? true : false;
 }
 module.exports = {
-SESSION_ID: process.env.SESSION_ID || "Your_Session_Id", // Add your session id
+SESSION_ID: process.env.SESSION_ID || "PBxmiB4b#ct6zo8h5q91nEvmH3t-jhdk0xt4IjlfKht2ZcUJ6g7k", // Add your session id
 PREFIX: process.env.PREFIX || ".",
 MODE: process.env.MODE || "public",  //public | private | inbox | group
 OWNER_NUMBER: process.env.OWNER_NUMBER || "94779062397",
